@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noa MATHIEU - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    header {
+      height: 40vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #1E40AF;
+      text-align: center;
+      padding: 0 10px;
+    }
+
+    header div {
+      max-width: 1000px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    header a {
+      font-size: 1rem;
+      background-color: #F59E0B;
+      color: black;
+      padding: 12px 24px;
+      border-radius: 9999px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .clients-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .client-card {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .client-logo {
+      width: 200px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    .client-name {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .client-type {
+      font-size: 1rem;
+      color: #777;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #F59E0B;
+    }
+
+    section#clients {
+      background-color: #1E40AF;
+      color: white;
+      padding: 60px 20px;
+    }
+
+    .realization-section {
+      padding: 40px 20px;
+      background-color: #f8fafc;
+    }
+
+    .realization-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .realization-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+  </style>
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- SECTION ACCUEIL -->
+  <header>
+    <div>
+      <h1>Noa MATHIEU</h1>
+      <p>Etudiant créatif et professionnel dans le monde du design</p>
+      <a href="#prestations">Découvrez mes prestations</a>
+    </div>
+  </header>
+
+  <!-- SECTION À PROPOS -->
+<section id="a-propos" class="py-16 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-4 md:flex md:items-start md:space-x-12">
+    
+    <!-- Photo -->
+    <div class="flex-shrink-0 mb-8 md:mb-0">
+      <img src="https://via.placeholder.com/300" alt="Photo de Noa" class="rounded-full w-60 h-60 object-cover shadow-lg">
+    </div>
+
+    <!-- Infos -->
+    <div class="flex-1">
+      <h2 class="text-3xl font-semibold text-gray-800 mb-4">À propos de moi</h2>
+      <p class="text-gray-700 mb-6">
+        Je m'appelle Noa Mathieu, étudiant passionné par le design graphique, le web et la création de contenus numériques. 
+        Créatif, rigoureux et toujours en quête de nouveaux défis !
+      </p>
+
+      <!-- Expériences -->
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">Expériences professionnelles</h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Stage en communication visuelle – Mairie de [ville], 2024</li>
+          <li>Création de sites web et supports pour associations locales</li>
+          <li>Freelance en design graphique et montage vidéo</li>
+        </ul>
+      </div>
+
+      <!-- Études -->
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">Études</h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Bachelor [Nom du diplôme] – [Établissement], [année en cours]</li>
+          <li>Baccalauréat [série] – [Lycée], 2023</li>
+        </ul>
+      </div>
+
+      <!-- Compétences -->
+      <div>
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">Domaines de compétence</h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Suite Adobe (Photoshop, Illustrator, InDesign, Premiere Pro)</li>
+          <li>Suite Office (Word, Excel, PowerPoint)</li>
+          <li>HTML / CSS / Web design responsive</li>
+          <li>Création de visuels (affiches, flyers, logos, miniatures YouTube...)</li>
+          <li>Montage vidéo</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- SECTION PRESTATIONS -->
+  <section id="prestations" class="py-16 bg-white fade-in">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold">Mes Prestations</h2>
+      <p class="mt-4 text-lg">Je propose des services sur mesure pour répondre à vos besoins</p>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Design</h3>
+          <p class="mt-4">Création de designs modernes (affiche, Flyer, miniature, logo...)</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Web design</h3>
+          <p class="mt-4">Création de site web responsive</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Montage vidéo</h3>
+          <p class="mt-4">Montage vidéo professionnel</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION MES CLIENTS -->
+  <section id="clients">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="section-title">Mes Clients</h2>
+      <div class="clients-container">
+
+        <div class="client-card"
+          data-site="https://twirlingbatonmaisonsgoutte.org"
+          data-description="Réalisation d’un site web complet pour un club sportif local, intégrant une galerie photos, les résultats sportifs et des designs d’affiches pour les événements.">
+          <center><img
+              src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=216,fit=crop,q=95/YNqJZrbL2atWjJWW/capture_d_a-c-cran_2024-03-02_164122-removebg-preview-YZ9b6VPzoaUxyG5p.png"
+              alt="Twirling bâton Maisonsgoutte" class="client-logo" /></center>
+          <div class="client-name">Twirling bâton Maisonsgoutte</div>
+          <div class="client-type">Création d'un site web sportif & création de designs</div>
+        </div>
+
+        <div class="client-card"
+          data-site="https://acl-neuve-eglise.org"
+          data-description="Développement d’un site pour une association culturelle : mise en avant des événements, formulaire de contact, affiches et flyers réalisés pour plusieurs animations locales.">
+          <center><img
+              src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=3600,h=2160,fit=crop/A0xVzb5LyBhlOawv/capture_d_a-c-cran_2024-09-29_140512-removebg-preview-AQEy0Leeq0ivB0n7.png"
+              alt="Acl Neuve-Eglise Hirtzelbach" class="client-logo" /></center>
+          <div class="client-name">Acl Neuve-Eglise Hirtzelbach</div>
+          <div class="client-type">Création d'un site web associatif & création de designs</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION RÉALISATIONS -->
+  <section class="realization-section">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Réalisation Twirling bâton Maisonsgoutte -->
+      <div class="realization">
+        <h3 class="realization-title">Twirling bâton Maisonsgoutte</h3>
+        <img src="https://via.placeholder.com/1200x800" alt="Réalisation Twirling bâton Maisonsgoutte" class="realization-image">
+        <img src="https://via.placeholder.com/1200x800" alt="Réalisation Twirling bâton Maisonsgoutte" class="realization-image">
+        <img src="https://via.placeholder.com/1200x800" alt="Réalisation Twirling bâton Maisonsgoutte" class="realization-image">
+        <img src="https://via.placeholder.com/1200x800" alt="Réalisation Twirling bâton Maisonsgoutte" class="realization-image">
+      </div>
+
+      <!-- Réalisation Acl Neuve-Eglise Hirtzelbach -->
+      <div class="realization mt-16">
+        <h3 class="realization-title">Acl Neuve-Eglise Hirtzelbach</h3>
+        <img src="https://via.placeholder.com/1200x800" alt="Réalisation Acl Neuve-Eglise Hirtzelbach" class="realization-image">
+        <img src="https://via.placeholder.com/1200x800" alt="Réalisation Acl Neuve-Eglise Hirtzelbach" class="realization-image">
+        <img src="https://via.placeholder.com/1200x800" alt="Réalisation Acl Neuve-Eglise Hirtzelbach" class="realization-image">
+        <img src="https://via.placeholder.com/1200x800" alt="Réalisation Acl Neuve-Eglise Hirtzelbach" class="realization-image">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 bg-gray-800 text-white text-center">
+    <div class="max-w-7xl mx-auto">
+      <p>&copy; 2025 Noa MATHIEU. Tous droits réservés.</p>
+      <p class="mt-2">Contactez-moi à : <a href="mailto:noa_mathieu67@outlook.fr" class="underline">noa_mathieu67@outlook.fr</a></p>
+      <a href="https://www.instagram.com/noa__mth/" ><u>Instagram</u></a>
+      <a href="https://www.facebook.com/profile.php?id=100091889507665&locale=fr_FR" ><u>Facebook</u></a>
+    </div>
+  </footer>
+
+  <!-- MODALE CLIENT -->
+  <div id="clientModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <div class="bg-white p-6 rounded-lg max-w-xl w-full relative">
+      <button id="closeModal" class="absolute top-2 right-2 text-gray-600 hover:text-red-500 text-xl">&times;</button>
+      <h3 class="text-2xl font-semibold mb-2">Détails du projet</h3>
+      <a id="clientLink" href="#" target="_blank" class="text-blue-500 underline mb-4 block">Voir le site</a>
+      <p id="clientDescription" class="mb-4 text-gray-700"></p>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    document.querySelectorAll('.client-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const site = card.getAttribute('data-site') || '#';
+        const description = card.getAttribute('data-description') || 'Aucune description disponible.';
+
+        document.getElementById('clientLink').href = site;
+        document.getElementById('clientDescription').textContent = description;
+
+        document.getElementById('clientModal').classList.remove('hidden');
+      });
+    });
+
+    document.getElementById('closeModal').addEventListener('click', () => {
+      document.getElementById('clientModal').classList.add('hidden');
+    });
+
+    document.getElementById('clientModal').addEventListener('click', (e) => {
+      if (e.target.id === 'clientModal') {
+        document.getElementById('clientModal').classList.add('hidden');
+      }
+    });
+  </script>
+
+</body>
+
+</html>
